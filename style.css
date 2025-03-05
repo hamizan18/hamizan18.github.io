@@ -1,0 +1,19 @@
+*{
+    font-family: sans-serif;
+}
+p{
+    line-height: 1.5;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+h2{
+    text-align: center;
+}
