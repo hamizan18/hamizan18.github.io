@@ -16,7 +16,7 @@ Berikut teman-teman saya di kelas:
 - [Firdhila Ananda Syahputri](https://firdhilaananda.github.io/)  
 - [Hafidz Maulana](https://hafidzmaulana28.github.io/)  
 - [Hayzar Muhaiyar](https://hayzarmuhaiyar0101.github.io/)  
-- [Irfandi](https://irfandi8.github.io/irfandi8)  
+- [Irfandi](https://irfandi8.github.io)  
 - [Muhammad Iqbal Sayuti](https://iqbalsayuti0.github.io/)  
 - [Imam Nawawi](https://imamnawawi1c.github.io/)  
 - [Ilham Syahdienar](https://ilhamdienar.github.io/)  
