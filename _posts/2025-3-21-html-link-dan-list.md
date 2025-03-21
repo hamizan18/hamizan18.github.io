@@ -7,7 +7,7 @@ Penjelasan Tentang Link dan List pada HTML
 
 ![HTML link dan List](/assets/images/html.png)
 
-Sumber: ChatGPT - Hamizan no Sensei
+Source:  Hamizan no Sensei
 
 # HTML: Link dan List
 
