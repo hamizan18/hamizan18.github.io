@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss"],"names":[],"mappings":"AAAA;EACI","sourcesContent":[".current {\n    color: green;\n}"],"file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss"],"names":[],"mappings":"AAAA;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI","sourcesContent":[".current{\n    color: green;\n}\n.ro1{\n    color: red;\n}\n.ro2{\n    color: burlywood;\n}\n.ro3{\n    color: blue;\n}"],"file":"styles.css"}
