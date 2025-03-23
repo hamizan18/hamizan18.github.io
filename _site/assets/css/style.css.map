@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss"],"names":[],"mappings":"AAAA;EACI;;;AAEJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI","sourcesContent":[".current{\n    color: green !important;\n}\n.ro1{\n    color: red !important;\n}\n.ro2{\n    color: burlywood !important;\n}\n.ro3{\n    color: blue !important;\n}"],"file":"style.css"}
