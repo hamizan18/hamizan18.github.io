@@ -72,7 +72,6 @@ GEM
 
 PLATFORMS
   x86_64-linux-gnu
-  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
