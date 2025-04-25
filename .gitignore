@@ -10,6 +10,12 @@
 /test/version_tmp/
 /tmp/
 
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named _site
+_site/
+
 # Used by dotenv library to load environment variables.
 # .env
 
