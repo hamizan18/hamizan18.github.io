@@ -2,7 +2,7 @@
 layout: default
 title: Friends
 ---
-# Friends page
+<center><h1>Friends Page</h1></center>
 
 Berikut teman-teman saya di kelas:
 
