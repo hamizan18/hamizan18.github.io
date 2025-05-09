@@ -9,6 +9,9 @@
     <!-- css -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{ site.baseurl }}//assets/images/favicon.icio">
+
     <!-- JavaScript -->
     <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
 
@@ -19,8 +22,25 @@
 </head>
 
 <body>
-    {% include navigation.html %} 
-    {{ content }}
-</body>
+    <div class="container">
+        <header>
+            <img src="{{ site.baseurl }}/assets/images/profile.jpeg" alt="Profile Picture" class="profile-picture">
+            <h1> {{ site.title }} </h1>
+            <p> {{ site.description }} </p>
+        </header>
+        
+        <nav>
+            {% include navigation.html %} 
+        </nav>
 
+        <main>
+            {{ content }}
+        </main>
+
+        <footer>
+            <p>&copy; {{ site.time | date: '%Y'}} {{ site.title }}. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
 </html>

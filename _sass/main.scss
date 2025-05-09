@@ -1,26 +1,111 @@
-body{
-    background: burlywood;
+$primary-color: #3c7b3a;
+$secondary-color: #fbbc05;
+$font-stack: Helvetica, sans-serif, times;
+$footer-header:  #463af3;
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-a{
-    margin: 3px;
+
+body{
+    background-color: #7ec4cf;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+header {
+    text-align: center;
+    padding: 24px;
+    color: #fff;
+    background-image: url(/assets/images/latar.jpg);
+    background-size: 250px;
+    border: solid white 2px;
+}
+main {
+    padding: 24px;
+    margin-top: 24px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+footer {
+    text-align: center;
+    padding: 8px;
+    margin-top: 24px;
+    color: #fff;
+    background-color: black;
+    border: solid white 2px
+}
+h2 {
+    color: #333;
+    margin-bottom: 8px;
+}
+nav {
+    margin: 20px 0;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $primary-color;
+    }
+    li {
+        float: left;
+        a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 8px 16px;
+            text-decoration: bib    ;
+            &:hover:not(.active) {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+nav a:hover{
+    background-color: #daeaf6;
+    color: black;
+}
+li a:hover {
+    background-color: #abc4ff;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 24px auto;
+}
+.active {
+    background-color: #ddedea;
+}
+a {
+    display: flex;
+    margin: 5px;
+    padding: 15px;
     text-decoration: none;
 }
-.current{
-    padding-left: 0.8%;
-    padding-right: 0.5%;
-    border-radius: 10%;
-    color: green;
-    background: black;
-    margin: 7px;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
+table, th, td {
+    border: solid 1px;
+    border-collapse: collapse;
+    width: 100%;
 }
 .ro1{
     color: red;
 }
-.tombol:hover{
+.tombol2:hover{
     transform: scale(0.8);
 }
 .ro2{
@@ -29,21 +114,26 @@ a{
 .ro3{
     color: blue;
 }
-.tombol{
-    width: 10%;
+.tombol2 {
+    display: flexbox;
+    justify-content: center;
+    width: 20%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
-@media only screen and (max-width: 450px) {
-    .tombol{
-        width: 20%;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -o-border-radius: 8px;
-    }
+.tombol {
+    display: flexbox;
+    justify-content: center;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.tombol:hover {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
 }
