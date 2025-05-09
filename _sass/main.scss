@@ -2,7 +2,9 @@ $primary-color: #3c7b3a;
 $secondary-color: #fbbc05;
 $font-stack: Helvetica, sans-serif, times;
 $footer-header:  #463af3;
-
+* {
+    font-family: monospace;
+}
 body,
 h1,
 h2,
@@ -11,9 +13,13 @@ p {
     padding: 0;
     box-sizing: border-box;
 }
-
+p {
+    text-align: justify;
+    font-family: monospace;
+    font-size: 13px;
+}
 body{
-    background-color: #7ec4cf;
+    background-image: linear-gradient(to bottom right, #2c276e, #70b9f1);
     font-family: $font-stack;
     line-height: 1.6;
 }
@@ -23,7 +29,6 @@ header {
     color: #fff;
     background-image: url(/assets/images/latar.jpg);
     background-size: 250px;
-    border: solid white 2px;
 }
 main {
     padding: 24px;
@@ -37,11 +42,21 @@ footer {
     margin-top: 24px;
     color: #fff;
     background-color: black;
-    border: solid white 2px
+}
+.footer {
+    display: flex;
+    justify-content: center;
 }
 h2 {
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    background-color: #a0ced9;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }
 nav {
     margin: 20px 0;
@@ -111,7 +126,7 @@ table, th, td {
     transform: scale(0.8);
 }
 .ro2{
-    color: yellow;
+    color: green;
 }
 .ro3{
     color: blue;
@@ -122,7 +137,11 @@ table, th, td {
     width: 20%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    background: #a0ced9;
+    height: 20px;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
 }
 .tombol {
     display: flexbox;
@@ -131,6 +150,10 @@ table, th, td {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    background: #a0ced9;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
 }
 .tombol:hover {
     transform: scale(0.8);
@@ -138,4 +161,7 @@ table, th, td {
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
+}
+.tombol:hover, .tombol2:hover {
+    cursor: pointer;
 }
