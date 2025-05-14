@@ -1,23 +1,25 @@
-/* Enhanced styles for your Jekyll website 
-   Keep your original code structure but with better styling */
-
-$primary-color: #3c7b3a;
-$secondary-color: #fbbc05;
-$accent-color: #463af3;
-$background-gradient: linear-gradient(to bottom right, #2c276e, #70b9f1);
-$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-$border-radius: 12px;
+:root {
+  --primary-color: #3c7b3a;
+  --secondary-color: #fbbc05;
+  --accent-color: #463af3;
+  --background-gradient: linear-gradient(to bottom right, #2c276e, #70b9f1);
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --highlight-bg: #a0ced9;
+  --light-bg: #f8f8f8;
+  --transition: all 0.3s ease;
+}
 
 * {
   font-family: monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3s ease;
+  transition: var(--transition);
 }
 
 body {
-  background-image: $background-gradient;
+  background-image: var(--background-gradient);
   line-height: 1.6;
   color: #333;
 }
@@ -36,8 +38,8 @@ header {
   background-image: url(/assets/images/latar.jpg);
   background-size: cover;
   background-position: center;
-  border-radius: 0 0 $border-radius $border-radius;
-  box-shadow: $box-shadow;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--box-shadow);
   margin-bottom: 20px;
 }
 
@@ -49,7 +51,7 @@ header {
   object-fit: cover;
   border: 4px solid white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  animation: floatAnimation 4s ease-in-out infinite;
 }
 
 .profile-picture:hover {
@@ -60,14 +62,13 @@ nav {
   margin: 20px 0;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  border-radius: $border-radius;
+  border-radius: var(--border-radius);
   padding: 5px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-/* Navigation links - keeping closer to your original style */
 nav a {
   display: flex;
   margin: 5px;
@@ -77,69 +78,37 @@ nav a {
   background-color: white;
   border-radius: 6px;
   font-weight: bold;
-  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
 nav a:hover {
   background-color: #daeaf6;
-  color: black;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
 }
 
 nav a.active {
   background-color: #ddedea;
 }
 
-/* Add touch ripple effect for mobile */
-nav a::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0;
-  border-radius: 100%;
-  transform: scale(1, 1) translate(-50%);
-  transform-origin: 50% 50%;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0, 0);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(100, 100);
-    opacity: 0;
-  }
-}
-
-nav a:active::after {
-  animation: ripple 1s ease-out;
-  opacity: 0;
-}
-
 main {
   padding: 30px;
   margin-top: 24px;
-  box-shadow: $box-shadow;
+  box-shadow: var(--box-shadow);
   background-color: rgba(255, 255, 255, 0.95);
-  border-radius: $border-radius;
+  border-radius: var(--border-radius);
   position: relative;
   z-index: 1;
+  animation: fadeIn 0.5s ease-out;
 }
 
 h1, h2 {
   color: #333;
   margin-bottom: 20px;
   padding: 10px 15px;
-  background-color: #a0ced9;
-  border-radius: $border-radius;
+  background-color: var(--highlight-bg);
+  border-radius: var(--border-radius);
   text-align: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -152,7 +121,7 @@ h1::after, h2::after {
   left: 50%;
   width: 50px;
   height: 3px;
-  background-color: $accent-color;
+  background-color: var(--accent-color);
   transform: translateX(-50%);
   border-radius: 3px;
 }
@@ -165,19 +134,13 @@ p {
   text-indent: 20px;
 }
 
-b {
-  font-weight: bold;
-  padding: 0 3px;
-}
-
 footer {
   text-align: center;
   padding: 20px;
   margin-top: 30px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.8);
-  border-radius: $border-radius $border-radius 0 0;
-  position: relative;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .footer {
@@ -187,20 +150,18 @@ footer {
   font-size: 14px;
 }
 
-/* Enhanced button styles with better mobile interaction */
+/* Button styles */
 .tombol, .tombol2 {
   display: inline-block;
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
-  background: #a0ced9;
+  background: var(--highlight-bg);
   color: #333;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   margin: 10px 5px;
-  font-family: monospace;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -214,60 +175,13 @@ footer {
   width: 20%;
 }
 
-/* Scale effect preserved from original */
 .tombol:hover, .tombol2:hover {
   transform: scale(0.8);
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
 }
 
-/* Additional interaction effects */
 .tombol:active, .tombol2:active {
   transform: scale(0.75);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  transition: transform 0.1s, box-shadow 0.1s;
-}
-
-/* Button shine effect */
-.tombol::before, .tombol2::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transition: 0.5s;
-}
-
-.tombol:hover::before, .tombol2:hover::before {
-  left: 100%;
-}
-
-/* Mobile-specific button enhancements */
-@media (max-width: 768px) {
-  .tombol, .tombol2 {
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
-  }
-  
-  /* Add pulsing effect on mobile */
-  @keyframes button-pulse {
-    0% { box-shadow: 0 0 0 0 rgba(160, 206, 217, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(160, 206, 217, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(160, 206, 217, 0); }
-  }
-  
-  .tombol:active, .tombol2:active {
-    animation: button-pulse 0.8s;
-  }
 }
 
 /* Table styles */
@@ -275,7 +189,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -287,7 +201,7 @@ th, td {
 }
 
 th {
-  background-color: #a0ced9;
+  background-color: var(--highlight-bg);
   color: #333;
   font-weight: bold;
 }
@@ -300,60 +214,20 @@ tr:hover {
   background-color: #f1f1f1;
 }
 
-/* Enhanced custom colors with interactive elements */
-.ro1 {
-  color: red;
+/* Custom color classes */
+.ro1, .ro2, .ro3 {
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  position: relative;
   display: inline-block;
-  transition: all 0.3s ease;
   padding: 0 2px;
 }
 
-.ro2 {
-  color: green;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  position: relative;
-  display: inline-block;
-  transition: all 0.3s ease;
-  padding: 0 2px;
-}
+.ro1 { color: red; }
+.ro2 { color: green; }
+.ro3 { color: blue; }
 
-.ro3 {
-  color: blue;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  position: relative;
-  display: inline-block;
-  transition: all 0.3s ease;
-  padding: 0 2px;
-}
-
-/* Interactive effect on hover */
 .ro1:hover, .ro2:hover, .ro3:hover {
   transform: scale(1.1);
-}
-
-/* Interactive element for touch */
-@media (max-width: 768px) {
-  .ro1, .ro2, .ro3 {
-    padding: 0 3px;
-    border-radius: 3px;
-  }
-  
-  .ro1:active {
-    background-color: rgba(255, 0, 0, 0.1);
-  }
-  
-  .ro2:active {
-    background-color: rgba(0, 255, 0, 0.1);
-  }
-  
-  .ro3:active {
-    background-color: rgba(0, 0, 255, 0.1);
-  }
 }
 
 /* Blog styling */
@@ -371,10 +245,6 @@ tr:hover {
   border-bottom: none;
 }
 
-.post-list h2 {
-  margin-bottom: 10px;
-}
-
 .post-list .post-meta {
   color: #666;
   font-size: 14px;
@@ -382,16 +252,23 @@ tr:hover {
   font-style: italic;
 }
 
-/* Friends page styling */
-/* Friends list links - closer to your original style but improved */
+/* Links styling */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
 ul li a {
   display: flex;
   margin: 5px 0;
   padding: 10px;
-  text-decoration: none;
   color: black;
-  transition: all 0.3s ease;
-  background-color: #f8f8f8;
+  background-color: var(--light-bg);
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -399,43 +276,15 @@ ul li a {
 
 ul li a:hover {
   background-color: #abc4ff;
-  text-decoration: underline;
   transform: translateX(5px);
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Mobile interactions for links */
-@media (max-width: 768px) {
-  ul li a {
-    padding: 12px 15px;
-    margin: 8px 0;
-  }
-  
-  /* Active state for better touch feedback */
-  ul li a:active {
-    background-color: #9ab4ef;
-    transform: translateX(8px);
-    transition: all 0.1s ease;
-  }
-}
-
-/* Post specific styling */
-article h1 {
-  font-size: 28px;
-}
-
-article .post-meta {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #666;
-  font-style: italic;
-}
-
+/* Text formatting */
 code {
   background-color: #f5f5f5;
   padding: 3px 5px;
   border-radius: 3px;
-  font-family: monospace;
   font-size: 0.9em;
   border: 1px solid #eee;
 }
@@ -450,189 +299,14 @@ pre {
 }
 
 blockquote {
-  border-left: 5px solid #a0ced9;
+  border-left: 5px solid var(--highlight-bg);
   padding: 10px 20px;
   margin: 20px 0;
   background-color: #f9f9f9;
   font-style: italic;
 }
 
-/* Enhanced responsive styles with mobile interactions */
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
-  
-  /* Button improvements for touch */
-  .tombol, .tombol2 {
-    width: 100%;
-    margin: 15px 0;
-    padding: 16px 20px; /* Larger touch target */
-    font-size: 16px;
-    -webkit-tap-highlight-color: transparent; /* Remove default touch highlight */
-  }
-  
-  /* Add haptic-like feedback */
-  .tombol:active, .tombol2:active {
-    transform: scale(0.96);
-    transition: transform 0.1s;
-  }
-  
-  /* Mobile navigation */
-  nav {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-  }
-  
-  nav a {
-    padding: 15px;
-    margin: 5px 0;
-    text-align: center;
-    justify-content: center;
-    font-size: 16px;
-  }
-  
-  /* Mobile header adjustments */
-  header {
-    padding: 15px 10px;
-  }
-  
-  .profile-picture {
-    width: 120px;
-    height: 120px;
-    margin: 15px auto;
-  }
-  
-  /* Content adjustments */
-  main {
-    padding: 15px;
-  }
-  
-  h1, h2 {
-    font-size: 1.5rem;
-    padding: 10px;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  /* Improved table scrolling */
-  table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  
-  /* Mobile-friendly list */
-  ul li {
-    padding: 8px 0;
-  }
-  
-  /* Better touch area for links */
-  a {
-    padding: 5px 0;
-    display: inline-block;
-  }
-}
-
-/* Enhanced animations and interactions */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideInFromLeft {
-  from { opacity: 0; transform: translateX(-30px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes floatAnimation {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
-}
-
-main {
-  animation: fadeIn 0.5s ease-out;
-}
-
-.profile-picture {
-  animation: floatAnimation 4s ease-in-out infinite;
-}
-
-header h1 {
-  animation: slideInFromLeft 0.8s ease-out;
-}
-
-/* Add touch interaction feedback */
-@media (max-width: 768px) {
-  /* Page transitions for mobile */
-  body {
-    overflow-x: hidden; /* Prevent horizontal scroll during animations */
-  }
-  
-  /* Enhance touch feedback */
-  main {
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  /* Add smooth scrolling for better mobile experience */
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-/* Audio player styling if you want to make it visible */
-#bgMusic {
-  display: none; /* Keep it hidden but you can make it visible if needed */
-}
-
-/* Add a cool animation to certain elements */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-/* Add some nice hover effects to images */
-img:hover {
-  filter: brightness(1.1);
-}
-
-/* Better styling for code blocks in your blog posts */
-.highlight {
-  background-color: #f8f8f8;
-  border-radius: 5px;
-  margin: 20px 0;
-  padding: 15px;
-  overflow-x: auto;
-}
-
-/* Make sure links stand out */
-a {
-  color: #3498db;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  color: #2980b9;
-  text-decoration: underline;
-}
-
-/* Style for center-aligned content */
-center {
-  display: block;
-  text-align: center;
-  width: 100%;
-}
-
-/* Enhanced interactive kotak div */
 #kotak {
-  transition: all 0.3s ease;
   padding: 15px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -646,26 +320,94 @@ center {
   background-color: white;
 }
 
-/* Interactive elements for mobile */
-@media (max-width: 600px) {
-  #kotak {
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatAnimation {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  
+  .tombol, .tombol2 {
+    width: 100%;
+    margin: 15px 0;
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+  
+  .tombol:active, .tombol2:active {
+    transform: scale(0.96);
+  }
+  
+  nav {
+    flex-direction: column;
+  }
+  
+  nav a {
+    padding: 15px;
+    margin: 5px 0;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  header {
+    padding: 15px 10px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    margin: 15px auto;
+  }
+  
+  main {
+    padding: 15px;
+  }
+  
+  h1, h2 {
+    font-size: 1.5rem;
     padding: 10px;
+  }
+  
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .ro1:active {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  
+  .ro2:active {
+    background-color: rgba(0, 255, 0, 0.1);
+  }
+  
+  .ro3:active {
+    background-color: rgba(0, 0, 255, 0.1);
+  }
+  
+  ul li a:active {
+    background-color: #9ab4ef;
+    transform: translateX(8px);
   }
   
   #kotak:active {
     transform: scale(0.98);
-    transition: transform 0.2s ease;
   }
   
-  /* Add interactive animations */
-  @keyframes pulse-mobile {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.98); }
-    100% { transform: scale(1); }
-  }
-  
-  #kotak:hover {
-    animation: pulse-mobile 2s infinite;
-    transform: none;
+  html {
+    scroll-behavior: smooth;
   }
 }
