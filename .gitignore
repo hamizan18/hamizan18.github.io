@@ -17,6 +17,7 @@
 _site/
 .jekyll-cache/
 vendor/
+backup/
 
 # Used by dotenv library to load environment variables.
 # .env
