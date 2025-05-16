@@ -1,4 +1,22 @@
+title: Hamizan Putra Zulia
+email: hamizan_putra013@student.pnl.ac.id
+description: >
+  A personal blog by Hamizan Putra Zulia, a student at Politeknik Negeri Lhokseumawe.
+  This blog is built using Jekyll and hosted on Github Pages.
+  The content is primarilly in Indonesion, but some posts may be in English.
+
+baseurl: ""
+
 url: 'https://hamizan18.github.io'
+
+github_username: hamizan18
+
+collections: 
+  friends:
+    output: true
+    permalink: friends/:name/
+    title: Friends
+    description: List of my friends in the class
 
 plugins:
   - jekyll-feed

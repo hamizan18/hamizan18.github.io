@@ -27,6 +27,7 @@
   position: relative;
   background: linear-gradient(135deg, #62879f, #2c3e50);
   color: white;
+  text-transform: uppercase;
 }
 
 aside {
@@ -330,7 +331,6 @@ a {
 }
 
 a:hover {
-  color: #2980b9;
   text-decoration: underline;
 }
 
