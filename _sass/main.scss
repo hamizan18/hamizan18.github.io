@@ -27,7 +27,7 @@ header {
     text-align: center;
     padding: 24px;
     color: #fff;
-    background-image: url(/assets/images/latar.jpg);
+    background-color: #000000;
     background-size: 250px;
 }
 main {
@@ -103,6 +103,7 @@ li a:hover {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     margin: 24px auto;
+    background-color: $secondary-color;
 }
 .active {
     background-color: #ddedea;
