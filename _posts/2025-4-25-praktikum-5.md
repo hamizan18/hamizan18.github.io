@@ -6,8 +6,6 @@ title: "Belajar Menambahkan JavaScript pada Website"
 Penjelasan mengenai Fundamental JavaScript DOM (Document Object Model)
 
 
-
-
 # 📚 Fundamental JavaScript DOM (Document Object Model)
 
 DOM adalah cara JavaScript untuk berinteraksi dengan HTML dan mengubah tampilan halaman secara dinamis.
