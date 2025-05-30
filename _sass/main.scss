@@ -118,10 +118,43 @@ a {
     text-decoration: none;
     color: black;
 }
-table, th, td {
-    border: solid 1px;
-    border-collapse: collapse;
+#kotak {
+    background-color: #ffffff; /* Latar belakang kotak */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+    padding: 25px;
+    width: 90%;
+    max-width: 600px; /* Lebar maksimum untuk kotak */
+}
+
+table {
     width: 100%;
+    border-collapse: collapse; /* Menggabungkan border sel */
+    margin-top: 20px;
+    border-radius: 8px; /* Border radius untuk tabel */
+    overflow: hidden; /* untuk border radius di tabel */
+}
+
+th, td {
+    border: 1px solid #dddddd; /* Border antar sel */
+    padding: 12px 15px; /* Padding dalam sel */
+    text-align: left;
+    font-size: 0.95em;
+}
+
+th {
+    background-color: #70b9f1; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
+}
+
+tr:hover {
+    background-color: #ddd; /* Warna latar belakang saat di-hover */
 }
 .ro1{
     color: red;
