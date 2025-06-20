@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "HTML Link dan List"
+title: "Praktikum 4 - HTML Link dan List"
 ---
 
 Penjelasan Tentang Link dan List pada HTML
 
 ![HTML link dan List](/assets/images/html.png)
 
-Source:  Hamizan no Sensei
-
+Source:  Hamizan and ChatGPT
+    
 # HTML: Link dan List
 
 ## 📌 Link (Tautan) di HTML
@@ -23,11 +23,10 @@ Format dasar:
 🔹 **Contoh tambahan:**
 ```html
 <a href="https://google.com" target="_blank">Buka Google di tab baru</a>
-<a href="halaman.html">Link ke halaman lokal</a>
-<a href="mailto:email@example.com">Kirim Email</a>
+<a href="apaaja.html">Link ke halaman lokal</a>
+<a href="mijan@gmail.com">Kirim Email</a>
 ```
 - `target="_blank"` → Buka link di tab baru.
-- `mailto:` → Membuka aplikasi email dengan alamat tertentu.
 
 ---
 

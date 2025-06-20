@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Belajar Buat Post"
+title: "Praktikum 3 - Belajar Buat Post"
 ---
 
 Mempelajari cara membuat post dengan bahasa markdown
 
----
-
-# 📝 Cara Membuat Post dengan Markdown
-
-Markdown adalah bahasa penulisan ringan (lightweight markup language) untuk membuat teks yang rapi dan mudah dibaca, baik di web maupun di GitHub.
-
----
+### Langkah-langkah:
+1. Pertama, siapkan folder baru file bernama post.html didalam folder _layouts
+2. Lalu, buat folder bernama _posts untuk menampatkan semua file post yang akan dibuat
+3. Setelah itu, arahkan kedalam folder _posts
+4. Kemudian buat file baru dengan format YYYY-M-DD/tahun-bulan-tanggal
+5. Setelah itu, save dengan format file .md
+6. Dah jadiiii.
 
 ## 📌 Struktur Dasar Markdown
 
@@ -75,7 +75,7 @@ Ini paragraf kedua.
 #### a. Link
 
 ```markdown
-[OpenAI](https://openai.com)
+[HAMIJAN](https://hamizan18.github.io)
 ```
 
 #### b. Gambar
@@ -120,40 +120,4 @@ function halo() {
 
 ```markdown
 ---
-```
-
----
-
-## 🧪 Contoh Post Markdown
-
-````markdown
-# Belajar JavaScript Dasar
-
-JavaScript adalah bahasa pemrograman untuk website. Dalam post ini, kita akan belajar dasar-dasarnya.
-
-## Apa itu Variabel?
-
-Kita bisa membuat variabel dengan `let`, `const`, atau `var`.
-
-```javascript
-let nama = "Budi";
-const umur = 20;
-````
-
-## Kesimpulan
-
-* JavaScript sangat penting untuk web
-* Mulai dari dasar seperti variabel, fungsi, dan DOM
-
-> Tetap semangat belajar ya! 💪
-
-```
-
----
-
-## ✅ Tips Tambahan
-
-- Markdown bisa digunakan di **GitHub**, **Notion**, **VS Code**,
- **Blog**, dan banyak tempat lain.
-- Markdown tidak butuh styling ribet — cukup fokus ke kontennya.
 ```

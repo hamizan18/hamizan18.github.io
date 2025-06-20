@@ -1,9 +1,9 @@
-$primary-color: #3c7b3a;
+$primary-color: #70b9f1;
 $secondary-color: #fbbc05;
-$font-stack: Helvetica, sans-serif, times;
-$footer-header:  #463af3;
+$font-stack: Arial;
+$footer-header:  #71816d;
 * {
-    font-family: monospace;
+    font-family: $font-stack;
 }
 body,
 h1,
@@ -15,11 +15,11 @@ p {
 }
 p {
     text-align: justify;
-    font-family: monospace;
+    font-family: $font-stack;
     font-size: 13px;
 }
 body{
-    background-image: linear-gradient(to bottom right, #2c276e, #70b9f1);
+    background-color: #c9b79c;
     font-family: $font-stack;
     line-height: 1.6;
 }
@@ -27,7 +27,7 @@ header {
     text-align: center;
     padding: 24px;
     color: #fff;
-    background-color: #000000;
+    background-color: $footer-header;
     background-size: 250px;
 }
 main {
@@ -41,7 +41,7 @@ footer {
     padding: 8px;
     margin-top: 24px;
     color: #fff;
-    background-color: black;
+    background-color: $footer-header;
 }
 .footer {
     display: flex;
@@ -51,12 +51,12 @@ h2, h1 {
     color: #333;
     margin-bottom: 20px;
     margin-top: 0;
-    background-color: #a0ced9;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    background-color: #f1e0c5;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 nav {
     margin: 20px 0;
@@ -65,32 +65,32 @@ nav {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: $primary-color;
+        background-color: #f4e8c1;
     }
     li {
         float: left;
         a {
             display: block;
-            color: white;
+            color: black;
             text-align: center;
             padding: 8px 16px;
             text-decoration: none;
             &:hover:not(.active) {
-                background-color: $secondary-color;
+                background-color: #feefe5;
             }
         }
     }
 }
 nav a:hover{
-    background-color: #daeaf6;
+    background-color: #ecc8af;
     color: black;
 }
 li a:hover {
-    background-color: #abc4ff;
+    background-color: #feefe5;
     text-decoration: underline;
 }
 .japan {
-    font-color: #fff;
+    color: #e4572e;
 }
 .container {
     width: 80%;
@@ -101,15 +101,11 @@ li a:hover {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     margin: 24px auto;
     background-color: $secondary-color;
 }
 .active {
-    background-color: #ddedea;
+    background-color: #feefe5;
 }
 a {
     display: flex;
@@ -190,6 +186,7 @@ tr:hover {
     top: 100%;
     left: 100%;
     transition: all 0.7s;
+
 }
 .tombol:hover {
     transform: scale(0.8);
@@ -200,4 +197,7 @@ tr:hover {
 }
 .tombol:hover, .tombol2:hover {
     cursor: pointer;
+}
+h1{
+    text-align: center;
 }
