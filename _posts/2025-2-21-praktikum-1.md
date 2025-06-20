@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Praktikum 1 - Instalasi Jekyll dan membuat akun Github"
+author: Hamijaannn
 ---
 
 Instalasi Jekyll dan membuat akun GitHub sendiri
-# Memulai instalasi
+
+### Memulai instalasi
 
 - Siapkan Aplikasi dan tools yang dibutuhkan(Jika belum ada), yaitu:
    - Windows, Linux, atau macOS.

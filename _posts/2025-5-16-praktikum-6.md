@@ -1,9 +1,12 @@
 ---
 layout: post
 title: "Praktikum 6 - Menambahkan ke folder _students"
+author: Hamijaannn
 ---
 
 Belajar menambahkan ke folder _students di repository lain
+
+### Langkah-langkahnya:
 
 1. Buka Repository GitHub Tujuan
 
@@ -44,7 +47,7 @@ Belajar menambahkan ke folder _students di repository lain
     - Di bagian “Enter file contents here”, isilah isi file mengikuti format contoh yang diberikan di repo.
 
     - Biodata atau informasi seperti format berikut:
-```
+```bash
     ---
     layout: student
     short_name: Mijan

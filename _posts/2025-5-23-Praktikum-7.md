@@ -1,11 +1,12 @@
 ---                         
 layout: post                
 title: "Praktikum 7 - Mengisi Post sebelumnya" 
----                         
+author: Hamijaannn
+---
 
-Mengisi postingan blog
+Cara mengisi postingan blog
 
-# Langkah-langkah
+### Langkah-langkah
 
 1. Buka bagian _posts pada repositori yang sudah di clone(hamizan18.github.io)
 2. Tambah file yang ingin ditambahkan dengan format file .md

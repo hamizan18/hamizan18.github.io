@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Praktikum 2 - Membuat index.html dan jekyll serve"
+author: Hamijaannn
 ---
 
 Membuat index.html dan menjalankan jekyll serve
 
-# Menjalankan Jekyll serve
+### Menjalankan Jekyll serve
 
 - Setelah membuat sebuah repository dengan nama sendiri yang sesuai dengan yg nama github
 - Clone repository tersebut ke local

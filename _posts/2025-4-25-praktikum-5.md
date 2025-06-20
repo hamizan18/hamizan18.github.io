@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Praktikum 5 - Belajar Menambahkan JavaScript pada Website"
+author: Hamijaannn
 ---
 
 Penjelasan mengenai Fundamental JavaScript DOM (Document Object Model)

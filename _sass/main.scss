@@ -1,4 +1,4 @@
-$primary-color: #70b9f1;
+$primary-color: #ecc8af;
 $secondary-color: #fbbc05;
 $font-stack: Arial;
 $footer-header:  #71816d;
@@ -42,8 +42,6 @@ footer {
     margin-top: 24px;
     color: #fff;
     background-color: $footer-header;
-}
-.footer {
     display: flex;
     justify-content: center;
 }
@@ -51,12 +49,8 @@ h2, h1 {
     color: #333;
     margin-bottom: 20px;
     margin-top: 0;
-    background-color: #f1e0c5;
+    background-color: $primary-color;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
 }
 nav {
     margin: 20px 0;
@@ -120,7 +114,7 @@ a {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
     padding: 25px;
     width: 90%;
-    max-width: 600px; /* Lebar maksimum untuk kotak */
+    max-width: 1000px; /* Lebar maksimum untuk kotak */
 }
 
 table {
@@ -130,16 +124,15 @@ table {
     border-radius: 8px; /* Border radius untuk tabel */
     overflow: hidden; /* untuk border radius di tabel */
 }
-
 th, td {
     border: 1px solid #dddddd; /* Border antar sel */
     padding: 12px 15px; /* Padding dalam sel */
-    text-align: left;
+    text-align: center;
     font-size: 0.95em;
 }
 
 th {
-    background-color: #70b9f1; /* Warna latar belakang header */
+    background-color: $footer-header; /* Warna latar belakang header */
     color: white; /* Warna teks header */
     font-weight: bold;
     text-transform: uppercase;
@@ -151,12 +144,10 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: #ddd; /* Warna latar belakang saat di-hover */
+    cursor: default;
 }
 .ro1{
     color: red;
-}
-.tombol2:hover{
-    transform: scale(0.8);
 }
 .ro2{
     color: green;
@@ -164,40 +155,29 @@ tr:hover {
 .ro3{
     color: blue;
 }
-.tombol2 {
-    display: flexbox;
-    justify-content: center;
-    width: 20%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: #a0ced9;
-    top: 100%;
-    left: 100%;
-    transition: all 0.7s;
-}
-.tombol {
-    display: flexbox;
-    justify-content: center;
-    width: 30%;
+.tombol, .tombol2 {
+    width: 40%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    background: #a0ced9;
+    background: $primary-color;
     top: 100%;
     left: 100%;
-    transition: all 0.7s;
-
-}
-.tombol:hover {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
 }
 .tombol:hover, .tombol2:hover {
     cursor: pointer;
 }
 h1{
     text-align: center;
+}
+pre {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 1em;
+}
+.judul-click {
+    list-style-type: none;
+    padding: 0;
+    
 }

@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Praktikum 3 - Belajar Buat Post"
+author: Hamijaannn
 ---
 
 Mempelajari cara membuat post dengan bahasa markdown
 
 ### Langkah-langkah:
+
 1. Pertama, siapkan folder baru file bernama post.html didalam folder _layouts
 2. Lalu, buat folder bernama _posts untuk menampatkan semua file post yang akan dibuat
 3. Setelah itu, arahkan kedalam folder _posts
