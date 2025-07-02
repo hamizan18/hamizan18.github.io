@@ -47,9 +47,9 @@ footer {
 }
 h2, h1 {
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 0;
-    background-color: $primary-color;
+    background-color: #ffc861dd;
     border-radius: 8px;
 }
 nav {
@@ -75,9 +75,26 @@ nav {
         }
     }
 }
+ol {
+    list-style-type: none;
+    padding: 0;
+    a {
+        padding-left: 25px;
+        background-color: #ffd3acc6;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+}
+
 nav a:hover{
     background-color: #ecc8af;
     color: black;
+}
+li {
+    padding: 0;
 }
 li a:hover {
     background-color: #feefe5;
@@ -105,6 +122,7 @@ a {
     display: flex;
     margin: 5px;
     padding: 15px;
+    padding-left: 0px;
     text-decoration: none;
     color: black;
 }
@@ -178,4 +196,33 @@ pre {
 }
 .judul-click {
     list-style-type: none;
+    background-color: #f4e8c1;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    p {
+        padding: 2px;
+    }
+    a {
+        margin-left: 0px;
+        padding-bottom: 0;
+    }
+    a:hover {
+        background-color:   #feefe5;
+        border-radius: 20%;
+        -webkit-border-radius: 20%;
+        -moz-border-radius: 20%;
+        -ms-border-radius: 20%;
+        -o-border-radius: 20%;
+}
+}
+.judul-click:hover {
+    background-color: #feefe5;
+}
+.judul-post {
+    padding: 0;
 }
